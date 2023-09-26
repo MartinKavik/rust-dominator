@@ -1,0 +1,66 @@
+[package]
+name = "issue"
+version = "0.1.0"
+description = "Issue demo using dominator"
+authors = ["MartinK"]
+categories = ["wasm"]
+readme = "README.md"
+license = "MIT"
+edition = "2018"
+
+[workspace]
+
+[dependencies]
+
+
+# ====== wasm-bindgen ======
+
+# wasm-bindgen = { path = "../../../wasm-bindgen" }
+
+# current main (26.9.2023)
+wasm-bindgen = { git = "https://github.com/rustwasm/wasm-bindgen", rev = "ba244b92e1abbe1b2ceb76d2ed7d106bb7df1eea" }
+
+# Firefox queue issue debug
+# wasm-bindgen = { git = "https://github.com/MartinKavik/wasm-bindgen", rev = "f5f8e3725a72e14da49adf6c42e8c9c1c0aa1e44" }
+
+# Firefox queue issue fix
+# wasm-bindgen = { git = "https://github.com/MartinKavik/wasm-bindgen", rev = "a3d82ce1f97e11451286b6f13ac510266d43d132" }
+
+# Firefox queue issue fix without logs
+# wasm-bindgen = { git = "https://github.com/MartinKavik/wasm-bindgen", rev = "b2058ee320c457ad8696e0e79d2ab080419f6dfe" }
+
+
+
+# ====== wasm-bindgen-futures ======
+# **NOTE**: wasm-bindgen-future <= 0.4.29 works because of the greedy queue implementation
+
+# wasm-bindgen-futures = { path = "../../../wasm-bindgen/crates/futures" }
+
+# current main (26.9.2023)
+wasm-bindgen-futures = { git = "https://github.com/rustwasm/wasm-bindgen", rev = "ba244b92e1abbe1b2ceb76d2ed7d106bb7df1eea" }
+
+# Firefox queue issue debug
+# wasm-bindgen-futures = { git = "https://github.com/MartinKavik/wasm-bindgen", rev = "f5f8e3725a72e14da49adf6c42e8c9c1c0aa1e44" }
+
+# Firefox queue issue fix
+# wasm-bindgen-futures = { git = "https://github.com/MartinKavik/wasm-bindgen", rev = "a3d82ce1f97e11451286b6f13ac510266d43d132" }
+
+# Firefox queue issue fix without logs
+# wasm-bindgen-futures = { git = "https://github.com/MartinKavik/wasm-bindgen", rev = "b2058ee320c457ad8696e0e79d2ab080419f6dfe" }
+
+
+
+# ====== wasm-bindgen-futures ======
+# web-sys = { path = "../../../wasm-bindgen/crates/web-sys", features = ["console", "Window"] }
+
+# current main (26.9.2023)
+web-sys = { git = "https://github.com/rustwasm/wasm-bindgen", rev = "ba244b92e1abbe1b2ceb76d2ed7d106bb7df1eea", features = ["console", "Window"] }
+
+# Firefox queue issue debug
+# web-sys = { git = "https://github.com/MartinKavik/wasm-bindgen", rev = "f5f8e3725a72e14da49adf6c42e8c9c1c0aa1e44", features = ["console", "Window"] }
+
+# Firefox queue issue fix
+# web-sys = { git = "https://github.com/MartinKavik/wasm-bindgen", rev = "a3d82ce1f97e11451286b6f13ac510266d43d132", features = ["console", "Window"] }
+
+# Firefox queue issue fix without logs
+# web-sys = { git = "https://github.com/MartinKavik/wasm-bindgen", rev = "b2058ee320c457ad8696e0e79d2ab080419f6dfe", features = ["console", "Window"] }
